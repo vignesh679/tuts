@@ -12,12 +12,6 @@ function drawBoard(){
 		c.lineTo(xOffset + maxBoxSide * 3, yOffset + maxBoxSide * i);
 		c.moveTo(xOffset + maxBoxSide * i, yOffset);
 		c.lineTo(xOffset + maxBoxSide * i, yOffset + maxBoxSide * 3);
-		boxAreas.push([
-			xOffset + maxBoxSide * i,
-			yOffset + maxBoxSide * i,
-			xOffset + maxBoxSide * (i + 1),
-			yOffset + maxBoxSide * (i + 1),
-		])
 	}
 	c.strokeStyle = "black";
 	c.stroke();
